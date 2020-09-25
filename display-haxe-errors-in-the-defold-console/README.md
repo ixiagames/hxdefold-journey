@@ -1,4 +1,4 @@
-# Handle Haxe Error
+# Display Haxe errors in the Defold console
 
 Using Haxe with Defold is great but you may encounter an issue in which `throw` doesn't work properly. Let's try this example:
 

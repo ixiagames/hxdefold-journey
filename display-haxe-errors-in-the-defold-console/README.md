@@ -44,6 +44,6 @@ Now the error will show in the Defold console along with its position in Haxe. C
 
 ![haxe-pos-error](./images/haxe-pos-error.png)
 
-Of course we are still far from the ideal place: `throw` still doesn't work so we may still have to deal with `(null)(null)` from external libraries and stacktraces are still from generated Lua positions. But let's welcome this a baby step and celebrate the fact that we have made progress, and that together we will make more progresses travelling farther into the magical realms of Haxe and Defold, hopefully for one day getting to where `throw` work properly.
+Of course we are still far from the ideal place: `throw` still doesn't work so we may still have to deal with `(null)(null)` from external libraries and stacktraces are still from generated Lua positions. But let's welcome this a baby step and celebrate the fact that we have made progress, and that together we will make more progress travelling farther into the magical realms of Haxe and Defold, hopefully for one day getting to where `throw` works properly.
 
 Happy Haxing & Defolding!

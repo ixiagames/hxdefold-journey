@@ -20,7 +20,7 @@ That is not good, debugging `(null)(null)` is bound to cause some loss of sanity
 
 ![just-lua-error](./images/just-lua-error.png)
 
-Thankfully it is easy to create a method that have access to the position of each of its calls by using [`haxe.PosInfos`](https://api.haxe.org/haxe/PosInfos.html).
+Thankfully it is easy to create a method that has access to the position of each of its calls by using [`haxe.PosInfos`](https://api.haxe.org/haxe/PosInfos.html).
 
 ![PosInfos](./images/PosInfos.png)
 ![magic](./images/magic.gif)

@@ -1,6 +1,6 @@
 # Display Haxe errors in the Defold console
 
-Using Haxe with Defold is great but you may encounter an issue in which `throw` doesn't work properly. Let's try this example:
+[Using Haxe with Defold](https://github.com/hxdefold/hxdefold) is great but you may encounter an issue in which `throw` doesn't work properly. Let's try this example:
 
 ```haxe
 class OurScript extends defold.support.Script<{}> {

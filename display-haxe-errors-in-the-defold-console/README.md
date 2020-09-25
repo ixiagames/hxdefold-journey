@@ -6,7 +6,7 @@ Using Haxe with Defold is great but you may encounter an issue in which `throw` 
 class OurScript extends defold.support.Script<{}> {
 
     override function init(self:{}) {
-        throw "something bad happend";
+        throw "something painful";
     }
 
 }

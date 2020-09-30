@@ -1,13 +1,13 @@
 images {
-  image: "/main/images/button_down.png"
+  image: "/main/button_images/down.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/main/images/button_hover.png"
+  image: "/main/button_images/hover.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/main/images/button_out.png"
+  image: "/main/button_images/out.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 margin: 0

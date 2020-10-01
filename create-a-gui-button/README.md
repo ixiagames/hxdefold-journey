@@ -247,6 +247,6 @@ Let's build our Haxe then build the project in Defold! We should have a working,
 
 ![finale](./tutorial-images/finale.gif)
 
-Now that the tutorial has reached its finale, you may want to find ways to improve on our codes and the way we did things to suit your needs.
+Now that the tutorial has reached its finale, you may want to find ways to improve on our codes and the way we did things to suit your needs. (Also because I wrote these as I learn, it's likely that I did something dumb and any feedback is greatly appreciated!)
 
 Last but not least: Happy Haxing & Defolding!

@@ -100,7 +100,7 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "<text>"
+  text: "PLEASE CLICK ME"
   font: "system_font"
   id: "label"
   xanchor: XANCHOR_NONE

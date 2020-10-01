@@ -93,7 +93,7 @@ class ButtonScript extends GuiScript<{}> {
             } if (action.released) {
                 pointer_pressed = false;
                 if (pointer_over)
-                     // The pointer is inside the button but not pressed, means it's only hovering over out button.
+                     // The pointer is inside the button but not pressed, means it's only hovering over our button.
                     Gui.play_flipbook(bg_node, "hover");
             }
 
@@ -209,7 +209,7 @@ class ButtonScript extends GuiScript<{}> {
                     if (click_inited)
                         on_click();
 
-                    // The pointer is inside the button but not pressed, means it's only hovering over out button.
+                    // The pointer is inside the button but not pressed, means it's only hovering over our button.
                     Gui.play_flipbook(bg_node, "hover");
                 }
 

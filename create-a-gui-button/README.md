@@ -139,7 +139,7 @@ We need to drag the button to be completely inside the viewport, but dragging th
 
 ![screen-centered-background](./tutorial-images/screen-centered-background.png)
 
-If you change the position of the node in `main.collection` then check `main/button.gui`, you will see that the position of `background` was also updated there.
+If you change the position of the node in `main.collection` then check `main/button.gui`, you will see that the position of `background` was also updated there. This may become an issue if you need to use the same `button.gui` to create multiple buttons, this can be solved by having a GUI parent with our buttons added as templates, the details I will leave for another day.
 
 Now we build our project in the Defold editor (`Project` > `Build` or `Cmd+B` on Mac). Finally, some button interaction! But there is something missing... A label! We go back to `button.gui` and add a text node as a child of `background`, name it `label`.
 

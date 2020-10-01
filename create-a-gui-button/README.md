@@ -104,7 +104,7 @@ class ButtonScript extends GuiScript<{}> {
                     Gui.play_flipbook(bg_node, "out"); // and update the background.
                 }
             } else { // If the state says the pointer is outside the button
-                if (Gui.pick_node(bg_node, action.x, action.y)) { // but this say "no"
+                if (Gui.pick_node(bg_node, action.x, action.y)) { // but this says the state is wrong
                     pointer_over = true; // then we listen to it
                     // and update the background based on if the pointer is being pressed or not.
                     Gui.play_flipbook(bg_node, pointer_pressed ? "down" : "hover");
@@ -119,7 +119,7 @@ class ButtonScript extends GuiScript<{}> {
 }
 ```
 
-Run `haxe build.hxml` in the project directory to build our Haxe (into `main.lua` & `scripts/ButtonScript.gui_script`). Open `main\button.gui` in the Defold editor and set our script for the GUI.
+Run `haxe build.hxml` in the project directory to build our Haxe (into `main.lua` & `scripts/ButtonScript.gui_script`). Open `main/button.gui` in the Defold editor and set our script to the GUI.
 
 ![set-button-script](./tutorial-images/set-button-script.png)
 

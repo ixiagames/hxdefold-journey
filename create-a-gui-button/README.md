@@ -1,6 +1,6 @@
 # Create a GUI button
 
-Button! Proof of civilization! At a press of button, many things were given birth and destroyed, especially an indie dev's hopes and dreams. So how can we create button with [hxDefold](https://github.com/hxdefold/hxdefold)?
+Button! Proof of civilization! At a press of button, many things were given birth and destroyed, especially an indie dev's hopes and dreams. So how can we create a button with [hxDefold](https://github.com/hxdefold/hxdefold)?
 
 Let's start by creating an empty Defold project. Then we create a GUI component (we can also create buttons using game objects but let's leave it for another day). Right click the `main` folder, select `New...` > `Gui`, name it `button`.
 
@@ -26,7 +26,7 @@ Cool, we created a white box! Let's make it cooler! Save the 3 images below, the
 
 ![hover](./main/button_images/hover.png)
 
-- And `down.png` for when the touch / mouse button is pressing down.
+- And `down.png` for when the touch / mouse is pressing down on the button.
 
 ![down](./main/button_images/down.png)
 
@@ -133,17 +133,15 @@ Then right click the just created `go` > `Add Component File`, select `button.gu
 
 You may notice that the button is at the bottom left of the game viewport, it's because GUI uses that corner as the (0, 0) position.
 
-![bad-button](./tutorial-images/bad-button.png)
+![shy-button](./tutorial-images/shy-button.png)
 
 We need to drag the button to be completely inside the viewport, but dragging the go won't do anything because game objects and GUI objects use different coordinates. Although our button is a component of the go, their positions aren't linked in anyway. So we need to drag the `background` node instead.
 
 ![screen-centered-background](./tutorial-images/screen-centered-background.png)
 
-After dragging the node in `main.collection`, if you check `main/button.gui` you will see that the position of `background` was also updated there.
+If you change the position of the node in `main.collection` then check `main/button.gui`, you will see that the position of `background` was also updated there.
 
-Now we build our project in the Defold editor (`Project` > `Build` or `Cmd+B` on Mac). Finally, some button interaction!
-
-But there is something missing... A label! We go back to `button.gui` and add a text node as a child of `background`, name it `label`.
+Now we build our project in the Defold editor (`Project` > `Build` or `Cmd+B` on Mac). Finally, some button interaction! But there is something missing... A label! We go back to `button.gui` and add a text node as a child of `background`, name it `label`.
 
 ![add-label](./tutorial-images/add-label.png)
 
@@ -159,7 +157,7 @@ There will be only one font showing up named `system_font` which is built-in, se
 
 ![small-text](./tutorial-images/small-text.png)
 
-Let lay down a rule: a click/tap happens when the pointer was pressed inside a button then also released in that same button. We will now go back to update our Haxe script to the below. Let's search for `click_inited` and inspect the logics and the comments around it.
+Let lay down a rule: a click/tap happens when the pointer was pressed inside a button then also released in that same button. We will now update our Haxe script to the below. Let's search for `click_inited` and inspect the logics and the comments around it.
 
 ```haxe
 import defold.Go.GoMessages;
@@ -245,10 +243,10 @@ class ButtonScript extends GuiScript<{}> {
 }
 ```
 
-Let's build our Haxe then build the project in Defold.
+Let's build our Haxe then build the project in Defold! We should have a working, interactive button now!
 
-![the-end](./tutorial-images/the-end.gif)
+![finale](./tutorial-images/finale.gif)
 
-Now that we have a working, interactive button, you may want to find ways to improve on our codes and the way we did things to suit your needs.
+Now that the tutorial has reached its finale, you may want to find ways to improve on our codes and the way we did things to suit your needs.
 
-Last but most important, Happy Haxing & Defolding!
+Last but not least: Happy Haxing & Defolding!
